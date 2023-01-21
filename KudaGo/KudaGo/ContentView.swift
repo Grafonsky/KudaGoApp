@@ -13,6 +13,12 @@ struct ContentView: View {
             Text("KudaGoApp init")
         }
         .padding()
+        .onAppear {
+            Task {
+                let cities = await KudaGoService.shared.getCities()
+                print(cities)
+            }
+        }
     }
 }
 

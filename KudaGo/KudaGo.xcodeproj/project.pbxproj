@@ -11,6 +11,10 @@
 		FE4EB976297BE5BD0056F786 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE4EB975297BE5BD0056F786 /* ContentView.swift */; };
 		FE4EB978297BE5BE0056F786 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FE4EB977297BE5BE0056F786 /* Assets.xcassets */; };
 		FE4EB97B297BE5BE0056F786 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FE4EB97A297BE5BE0056F786 /* Preview Assets.xcassets */; };
+		FE4EB989297BEE900056F786 /* KudaGoEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE4EB988297BEE900056F786 /* KudaGoEndpoint.swift */; };
+		FE4EB98C297BF1F80056F786 /* Networking in Frameworks */ = {isa = PBXBuildFile; productRef = FE4EB98B297BF1F80056F786 /* Networking */; };
+		FE4EB991297BF66D0056F786 /* KudaGoService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE4EB990297BF66D0056F786 /* KudaGoService.swift */; };
+		FE4EB993297BF6B50056F786 /* CityModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE4EB992297BF6B50056F786 /* CityModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +23,10 @@
 		FE4EB975297BE5BD0056F786 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		FE4EB977297BE5BE0056F786 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FE4EB97A297BE5BE0056F786 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		FE4EB988297BEE900056F786 /* KudaGoEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KudaGoEndpoint.swift; sourceTree = "<group>"; };
+		FE4EB990297BF66D0056F786 /* KudaGoService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KudaGoService.swift; sourceTree = "<group>"; };
+		FE4EB992297BF6B50056F786 /* CityModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityModel.swift; sourceTree = "<group>"; };
+		FE4EB994297BFDC40056F786 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,6 +34,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FE4EB98C297BF1F80056F786 /* Networking in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -51,6 +60,10 @@
 		FE4EB972297BE5BD0056F786 /* KudaGo */ = {
 			isa = PBXGroup;
 			children = (
+				FE4EB994297BFDC40056F786 /* Info.plist */,
+				FE4EB98D297BF3BF0056F786 /* Extensions */,
+				FE4EB987297BEE240056F786 /* Model */,
+				FE4EB985297BEAF10056F786 /* Services */,
 				FE4EB973297BE5BD0056F786 /* KudaGoApp.swift */,
 				FE4EB975297BE5BD0056F786 /* ContentView.swift */,
 				FE4EB977297BE5BE0056F786 /* Assets.xcassets */,
@@ -65,6 +78,38 @@
 				FE4EB97A297BE5BE0056F786 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		FE4EB985297BEAF10056F786 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				FE4EB986297BEB2B0056F786 /* KudaGo */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		FE4EB986297BEB2B0056F786 /* KudaGo */ = {
+			isa = PBXGroup;
+			children = (
+				FE4EB988297BEE900056F786 /* KudaGoEndpoint.swift */,
+				FE4EB990297BF66D0056F786 /* KudaGoService.swift */,
+			);
+			path = KudaGo;
+			sourceTree = "<group>";
+		};
+		FE4EB987297BEE240056F786 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				FE4EB992297BF6B50056F786 /* CityModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		FE4EB98D297BF3BF0056F786 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +128,9 @@
 			dependencies = (
 			);
 			name = KudaGo;
+			packageProductDependencies = (
+				FE4EB98B297BF1F80056F786 /* Networking */,
+			);
 			productName = KudaGo;
 			productReference = FE4EB970297BE5BD0056F786 /* KudaGo.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +159,9 @@
 				Base,
 			);
 			mainGroup = FE4EB967297BE5BD0056F786;
+			packageReferences = (
+				FE4EB98A297BF1F80056F786 /* XCRemoteSwiftPackageReference "NetworkingPackage" */,
+			);
 			productRefGroup = FE4EB971297BE5BD0056F786 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -137,6 +188,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FE4EB989297BEE900056F786 /* KudaGoEndpoint.swift in Sources */,
+				FE4EB993297BF6B50056F786 /* CityModel.swift in Sources */,
+				FE4EB991297BF66D0056F786 /* KudaGoService.swift in Sources */,
 				FE4EB976297BE5BD0056F786 /* ContentView.swift in Sources */,
 				FE4EB974297BE5BD0056F786 /* KudaGoApp.swift in Sources */,
 			);
@@ -195,7 +249,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -249,7 +303,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -269,11 +323,13 @@
 				DEVELOPMENT_ASSET_PATHS = "\"KudaGo/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = KudaGo/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -281,9 +337,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = Grafonsky.KudaGo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -297,11 +356,13 @@
 				DEVELOPMENT_ASSET_PATHS = "\"KudaGo/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = KudaGo/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -309,9 +370,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = Grafonsky.KudaGo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -337,6 +401,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		FE4EB98A297BF1F80056F786 /* XCRemoteSwiftPackageReference "NetworkingPackage" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Grafonsky/NetworkingPackage";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		FE4EB98B297BF1F80056F786 /* Networking */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FE4EB98A297BF1F80056F786 /* XCRemoteSwiftPackageReference "NetworkingPackage" */;
+			productName = Networking;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = FE4EB968297BE5BD0056F786 /* Project object */;
 }
