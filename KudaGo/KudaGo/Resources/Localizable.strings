@@ -1,0 +1,10 @@
+/* 
+  Localizable.strings
+  KudaGo
+
+  Created by Bohdan Hawrylyshyn on 21.01.23.
+  
+*/
+
+// MARK: - v1.0
+"chooseCity" = "Select the location of the event and tap on the icon";
