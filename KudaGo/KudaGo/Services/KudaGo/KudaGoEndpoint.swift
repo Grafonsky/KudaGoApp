@@ -9,7 +9,7 @@ import Foundation
 import Networking
 
 enum KudaGoEndpoint {
-    case cities, events
+    case cities, events(city: CityModel, page: Int)
 }
 
 extension KudaGoEndpoint: Networking.Endpoint {
@@ -17,7 +17,6 @@ extension KudaGoEndpoint: Networking.Endpoint {
         var components: URLComponents = .init()
         components.scheme = "https"
         components.host = "kudago.com"
-        //        components.host = "kudago.com/public-api/v1.4"
         components.path = path
         components.queryItems = queryItems
         return components.url
@@ -33,8 +32,27 @@ extension KudaGoEndpoint: Networking.Endpoint {
             let orderByItem: URLQueryItem = .init(name: "order_by", value: "")
             queryItems = [langItem, fieldsItem, orderByItem]
             return queryItems
-        case .events:
-            return []
+        case .events(let city, let page):
+            let langItem: URLQueryItem = .init(name: "lang", value: locale)
+            let pageItem: URLQueryItem = .init(name: "page", value: String(page))
+            let pageSizeItem: URLQueryItem = .init(name: "page_size", value: "20")
+            let fieldsItem: URLQueryItem = .init(name: "fields", value: "dates,title,place,description,body_text,location,images,tags")
+            let expandItem: URLQueryItem = .init(name: "expand", value: "")
+            let orderByItem: URLQueryItem = .init(name: "order_by", value: "")
+            let textFormat: URLQueryItem = .init(name: "text_format", value: "text")
+            let idsItem: URLQueryItem = .init(name: "ids", value: "")
+            let locationItem: URLQueryItem = .init(name: "location", value: city.slug)
+            let actualSinceItem: URLQueryItem = .init(name: "actual_since", value: String(Date.currentTimeStamp))
+            let actualUntilItem: URLQueryItem = .init(name: "actual_until", value: "")
+            let isFreeItem: URLQueryItem = .init(name: "is_free", value: "")
+            let categoriesItem: URLQueryItem = .init(name: "categories", value: "")
+            queryItems = [
+                langItem, pageItem, pageSizeItem, fieldsItem,
+                expandItem, orderByItem, textFormat, idsItem,
+                locationItem, actualSinceItem, actualUntilItem, isFreeItem,
+                categoriesItem
+            ]
+            return queryItems
         }
     }
     
@@ -43,7 +61,7 @@ extension KudaGoEndpoint: Networking.Endpoint {
         case .cities:
             return "/public-api/v1.4/locations/"
         case .events:
-            return ""
+            return "/public-api/v1.4/events/"
         }
     }
     

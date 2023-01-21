@@ -8,25 +8,31 @@
 
 /* Begin PBXBuildFile section */
 		FE4EB974297BE5BD0056F786 /* KudaGoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE4EB973297BE5BD0056F786 /* KudaGoApp.swift */; };
-		FE4EB976297BE5BD0056F786 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE4EB975297BE5BD0056F786 /* ContentView.swift */; };
 		FE4EB978297BE5BE0056F786 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FE4EB977297BE5BE0056F786 /* Assets.xcassets */; };
 		FE4EB97B297BE5BE0056F786 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FE4EB97A297BE5BE0056F786 /* Preview Assets.xcassets */; };
 		FE4EB989297BEE900056F786 /* KudaGoEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE4EB988297BEE900056F786 /* KudaGoEndpoint.swift */; };
 		FE4EB98C297BF1F80056F786 /* Networking in Frameworks */ = {isa = PBXBuildFile; productRef = FE4EB98B297BF1F80056F786 /* Networking */; };
 		FE4EB991297BF66D0056F786 /* KudaGoService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE4EB990297BF66D0056F786 /* KudaGoService.swift */; };
 		FE4EB993297BF6B50056F786 /* CityModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE4EB992297BF6B50056F786 /* CityModel.swift */; };
+		FE4EB99B297C01C80056F786 /* CitySelectorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE4EB99A297C01C80056F786 /* CitySelectorView.swift */; };
+		FE4EB99E297C05200056F786 /* EventsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE4EB99D297C05200056F786 /* EventsView.swift */; };
+		FE4EB9A0297C07780056F786 /* EventsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE4EB99F297C07780056F786 /* EventsModel.swift */; };
+		FE4EB9A2297C0CE00056F786 /* Date + ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE4EB9A1297C0CE00056F786 /* Date + ext.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		FE4EB970297BE5BD0056F786 /* KudaGo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KudaGo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FE4EB973297BE5BD0056F786 /* KudaGoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KudaGoApp.swift; sourceTree = "<group>"; };
-		FE4EB975297BE5BD0056F786 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		FE4EB977297BE5BE0056F786 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FE4EB97A297BE5BE0056F786 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		FE4EB988297BEE900056F786 /* KudaGoEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KudaGoEndpoint.swift; sourceTree = "<group>"; };
 		FE4EB990297BF66D0056F786 /* KudaGoService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KudaGoService.swift; sourceTree = "<group>"; };
 		FE4EB992297BF6B50056F786 /* CityModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityModel.swift; sourceTree = "<group>"; };
 		FE4EB994297BFDC40056F786 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		FE4EB99A297C01C80056F786 /* CitySelectorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CitySelectorView.swift; sourceTree = "<group>"; };
+		FE4EB99D297C05200056F786 /* EventsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsView.swift; sourceTree = "<group>"; };
+		FE4EB99F297C07780056F786 /* EventsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsModel.swift; sourceTree = "<group>"; };
+		FE4EB9A1297C0CE00056F786 /* Date + ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date + ext.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,12 +66,12 @@
 		FE4EB972297BE5BD0056F786 /* KudaGo */ = {
 			isa = PBXGroup;
 			children = (
+				FE4EB995297BFF4A0056F786 /* App */,
 				FE4EB994297BFDC40056F786 /* Info.plist */,
 				FE4EB98D297BF3BF0056F786 /* Extensions */,
 				FE4EB987297BEE240056F786 /* Model */,
 				FE4EB985297BEAF10056F786 /* Services */,
 				FE4EB973297BE5BD0056F786 /* KudaGoApp.swift */,
-				FE4EB975297BE5BD0056F786 /* ContentView.swift */,
 				FE4EB977297BE5BE0056F786 /* Assets.xcassets */,
 				FE4EB979297BE5BE0056F786 /* Preview Content */,
 			);
@@ -101,6 +107,7 @@
 			isa = PBXGroup;
 			children = (
 				FE4EB992297BF6B50056F786 /* CityModel.swift */,
+				FE4EB99F297C07780056F786 /* EventsModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -108,8 +115,42 @@
 		FE4EB98D297BF3BF0056F786 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				FE4EB9A1297C0CE00056F786 /* Date + ext.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		FE4EB995297BFF4A0056F786 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				FE4EB99C297C05090056F786 /* EventsScreen */,
+				FE4EB998297C01B20056F786 /* CitySelectorScreen */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		FE4EB998297C01B20056F786 /* CitySelectorScreen */ = {
+			isa = PBXGroup;
+			children = (
+				FE4EB99A297C01C80056F786 /* CitySelectorView.swift */,
+				FE4EB999297C01C00056F786 /* Subviews */,
+			);
+			path = CitySelectorScreen;
+			sourceTree = "<group>";
+		};
+		FE4EB999297C01C00056F786 /* Subviews */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Subviews;
+			sourceTree = "<group>";
+		};
+		FE4EB99C297C05090056F786 /* EventsScreen */ = {
+			isa = PBXGroup;
+			children = (
+				FE4EB99D297C05200056F786 /* EventsView.swift */,
+			);
+			path = EventsScreen;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -190,9 +231,12 @@
 			files = (
 				FE4EB989297BEE900056F786 /* KudaGoEndpoint.swift in Sources */,
 				FE4EB993297BF6B50056F786 /* CityModel.swift in Sources */,
+				FE4EB9A0297C07780056F786 /* EventsModel.swift in Sources */,
+				FE4EB9A2297C0CE00056F786 /* Date + ext.swift in Sources */,
 				FE4EB991297BF66D0056F786 /* KudaGoService.swift in Sources */,
-				FE4EB976297BE5BD0056F786 /* ContentView.swift in Sources */,
 				FE4EB974297BE5BD0056F786 /* KudaGoApp.swift in Sources */,
+				FE4EB99B297C01C80056F786 /* CitySelectorView.swift in Sources */,
+				FE4EB99E297C05200056F786 /* EventsView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
