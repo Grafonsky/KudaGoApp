@@ -81,6 +81,4 @@ extension KudaGoEndpoint: Networking.Endpoint {
     var body: [String : String]? {
         return nil
     }
-    
-    
 }

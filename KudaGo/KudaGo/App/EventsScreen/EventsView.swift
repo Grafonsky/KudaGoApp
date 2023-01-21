@@ -8,13 +8,16 @@
 import SwiftUI
 
 struct EventsView: View {
+    
+    @State var slug: String
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        Text(slug)
     }
 }
 
 struct EventsView_Previews: PreviewProvider {
     static var previews: some View {
-        EventsView()
+        EventsView(slug: "spb")
     }
 }
