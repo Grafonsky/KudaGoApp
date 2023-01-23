@@ -24,7 +24,7 @@ final class KudaGoService: Networking.HTTPClient {
         }
     }
     
-    func getEvents(city: CityModel, page: Int = 1) async -> Result<[EventsResults], HTTPRequestError> {
+    func getEvents(city: String, page: Int = 1) async -> Result<[EventsResults], HTTPRequestError> {
         let result = await sendRequest(
             endpoint: KudaGoEndpoint.events(city: city, page: page),
             responseModel: EventsModel.self)

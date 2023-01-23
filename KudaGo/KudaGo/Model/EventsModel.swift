@@ -12,8 +12,9 @@ struct EventsModel: Decodable {
 }
 
 struct EventsResults: Decodable {
+    let id: UUID = .init()
     let date: [EventDate]?
-    let title: String?
+    var title: String?
     let description: String?
     let bodyText: String?
     let images: [EventImages]?

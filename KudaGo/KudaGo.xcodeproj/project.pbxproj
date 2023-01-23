@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FE097346297E4271003133B0 /* AsyncImageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE097345297E4271003133B0 /* AsyncImageService.swift */; };
+		FE097348297E485F003133B0 /* FetchingEventsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE097347297E485F003133B0 /* FetchingEventsView.swift */; };
+		FE09734A297E50C8003133B0 /* String + ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE097349297E50C8003133B0 /* String + ext.swift */; };
+		FE09734C297E5A2E003133B0 /* CityBackground.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE09734B297E5A2E003133B0 /* CityBackground.swift */; };
 		FE4EB974297BE5BD0056F786 /* KudaGoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE4EB973297BE5BD0056F786 /* KudaGoApp.swift */; };
 		FE4EB978297BE5BE0056F786 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FE4EB977297BE5BE0056F786 /* Assets.xcassets */; };
 		FE4EB97B297BE5BE0056F786 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FE4EB97A297BE5BE0056F786 /* Preview Assets.xcassets */; };
@@ -27,9 +31,16 @@
 		FE4EB9B2297C1FBF0056F786 /* SF-Pro.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FE4EB9B1297C1FBF0056F786 /* SF-Pro.ttf */; };
 		FE4EB9B4297C233B0056F786 /* SnapCarouselView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE4EB9B3297C233B0056F786 /* SnapCarouselView.swift */; };
 		FE4EB9B6297C2F190056F786 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = FE4EB9B5297C2F190056F786 /* Localizable.strings */; };
+		FE4EB9B8297C49820056F786 /* EventsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE4EB9B7297C49820056F786 /* EventsViewModel.swift */; };
+		FE4EB9BB297D28540056F786 /* EventCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE4EB9BA297D28540056F786 /* EventCell.swift */; };
+		FE4EB9BF297E21250056F786 /* LoadingEventCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE4EB9BE297E21250056F786 /* LoadingEventCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		FE097345297E4271003133B0 /* AsyncImageService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsyncImageService.swift; sourceTree = "<group>"; };
+		FE097347297E485F003133B0 /* FetchingEventsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchingEventsView.swift; sourceTree = "<group>"; };
+		FE097349297E50C8003133B0 /* String + ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String + ext.swift"; sourceTree = "<group>"; };
+		FE09734B297E5A2E003133B0 /* CityBackground.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityBackground.swift; sourceTree = "<group>"; };
 		FE4EB970297BE5BD0056F786 /* KudaGo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KudaGo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FE4EB973297BE5BD0056F786 /* KudaGoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KudaGoApp.swift; sourceTree = "<group>"; };
 		FE4EB977297BE5BE0056F786 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -51,6 +62,9 @@
 		FE4EB9B1297C1FBF0056F786 /* SF-Pro.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro.ttf"; sourceTree = "<group>"; };
 		FE4EB9B3297C233B0056F786 /* SnapCarouselView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnapCarouselView.swift; sourceTree = "<group>"; };
 		FE4EB9B5297C2F190056F786 /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
+		FE4EB9B7297C49820056F786 /* EventsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsViewModel.swift; sourceTree = "<group>"; };
+		FE4EB9BA297D28540056F786 /* EventCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventCell.swift; sourceTree = "<group>"; };
+		FE4EB9BE297E21250056F786 /* LoadingEventCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingEventCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,6 +122,7 @@
 			isa = PBXGroup;
 			children = (
 				FE4EB986297BEB2B0056F786 /* KudaGo */,
+				FE097345297E4271003133B0 /* AsyncImageService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -137,6 +152,7 @@
 				FE4EB9A7297C1D590056F786 /* UIScreen + ext.swift */,
 				FE4EB9AB297C1E510056F786 /* Color + ext.swift */,
 				FE4EB9AD297C1F990056F786 /* Font + ext.swift */,
+				FE097349297E50C8003133B0 /* String + ext.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -175,6 +191,8 @@
 			isa = PBXGroup;
 			children = (
 				FE4EB99D297C05200056F786 /* EventsView.swift */,
+				FE4EB9B7297C49820056F786 /* EventsViewModel.swift */,
+				FE4EB9B9297D28310056F786 /* Subviews */,
 			);
 			path = EventsScreen;
 			sourceTree = "<group>";
@@ -194,6 +212,17 @@
 				FE4EB9B1297C1FBF0056F786 /* SF-Pro.ttf */,
 			);
 			path = Fonts;
+			sourceTree = "<group>";
+		};
+		FE4EB9B9297D28310056F786 /* Subviews */ = {
+			isa = PBXGroup;
+			children = (
+				FE4EB9BA297D28540056F786 /* EventCell.swift */,
+				FE4EB9BE297E21250056F786 /* LoadingEventCell.swift */,
+				FE097347297E485F003133B0 /* FetchingEventsView.swift */,
+				FE09734B297E5A2E003133B0 /* CityBackground.swift */,
+			);
+			path = Subviews;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -275,18 +304,25 @@
 			buildActionMask = 2147483647;
 			files = (
 				FE4EB989297BEE900056F786 /* KudaGoEndpoint.swift in Sources */,
+				FE09734A297E50C8003133B0 /* String + ext.swift in Sources */,
+				FE4EB9B8297C49820056F786 /* EventsViewModel.swift in Sources */,
 				FE4EB993297BF6B50056F786 /* CityModel.swift in Sources */,
 				FE4EB9AE297C1F990056F786 /* Font + ext.swift in Sources */,
 				FE4EB9A0297C07780056F786 /* EventsModel.swift in Sources */,
+				FE4EB9BB297D28540056F786 /* EventCell.swift in Sources */,
 				FE4EB9A2297C0CE00056F786 /* Date + ext.swift in Sources */,
 				FE4EB9A8297C1D590056F786 /* UIScreen + ext.swift in Sources */,
+				FE4EB9BF297E21250056F786 /* LoadingEventCell.swift in Sources */,
 				FE4EB9AA297C1DBB0056F786 /* VisualEffectView.swift in Sources */,
 				FE4EB991297BF66D0056F786 /* KudaGoService.swift in Sources */,
+				FE09734C297E5A2E003133B0 /* CityBackground.swift in Sources */,
 				FE4EB9A4297C17F40056F786 /* CitySelectorViewModel.swift in Sources */,
 				FE4EB9B4297C233B0056F786 /* SnapCarouselView.swift in Sources */,
 				FE4EB974297BE5BD0056F786 /* KudaGoApp.swift in Sources */,
 				FE4EB9A6297C1CE70056F786 /* CityCellView.swift in Sources */,
+				FE097346297E4271003133B0 /* AsyncImageService.swift in Sources */,
 				FE4EB9AC297C1E510056F786 /* Color + ext.swift in Sources */,
+				FE097348297E485F003133B0 /* FetchingEventsView.swift in Sources */,
 				FE4EB99B297C01C80056F786 /* CitySelectorView.swift in Sources */,
 				FE4EB99E297C05200056F786 /* EventsView.swift in Sources */,
 			);
