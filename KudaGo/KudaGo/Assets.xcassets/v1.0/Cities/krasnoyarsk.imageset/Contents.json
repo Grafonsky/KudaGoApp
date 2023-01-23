@@ -1,0 +1,12 @@
+{
+  "images" : [
+    {
+      "filename" : "krasnoyarsk.jpg",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

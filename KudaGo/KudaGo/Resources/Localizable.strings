@@ -1,0 +1,16 @@
+/* 
+  Localizable.strings
+  KudaGo
+
+  Created by Bohdan Hawrylyshyn on 21.01.23.
+  
+*/
+
+// MARK: - v1.0
+"chooseCity"            = "Select the location of the event and tap on the icon";
+"gettingEvents"         = "Getting the events...";
+"eventsIn"              = "Events in %@";
+"startEvent"            = "Event start: %@";
+"endEvent"              = "Event end: %@";
+"error"                 = "Error";
+"connectToTheInternet"  = "Connect to the internet and restart the app";
