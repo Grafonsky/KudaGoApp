@@ -6,13 +6,12 @@
 //
 
 import Foundation
-import Networking
 
 enum KudaGoEndpoint {
     case cities, events(city: String, page: Int)
 }
 
-extension KudaGoEndpoint: Networking.Endpoint {
+extension KudaGoEndpoint: Endpoint {
     var baseURL: URL? {
         var components: URLComponents = .init()
         components.scheme = "https"
@@ -38,7 +37,7 @@ extension KudaGoEndpoint: Networking.Endpoint {
             let pageSizeItem: URLQueryItem = .init(name: "page_size", value: "20")
             let fieldsItem: URLQueryItem = .init(name: "fields", value: "dates,title,place,description,body_text,location,images,tags")
             let expandItem: URLQueryItem = .init(name: "expand", value: "")
-            let orderByItem: URLQueryItem = .init(name: "order_by", value: "")
+            let orderByItem: URLQueryItem = .init(name: "order_by", value: "-publication_date")
             let textFormat: URLQueryItem = .init(name: "text_format", value: "text")
             let idsItem: URLQueryItem = .init(name: "ids", value: "")
             let locationItem: URLQueryItem = .init(name: "location", value: city)
@@ -65,7 +64,7 @@ extension KudaGoEndpoint: Networking.Endpoint {
         }
     }
     
-    var method: Networking.HTTPRequestMethod {
+    var method: HTTPRequestMethod {
         switch self {
         case .cities, .events:
             return .get

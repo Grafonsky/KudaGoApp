@@ -11,11 +11,11 @@
 		FE097348297E485F003133B0 /* FetchingEventsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE097347297E485F003133B0 /* FetchingEventsView.swift */; };
 		FE09734A297E50C8003133B0 /* String + ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE097349297E50C8003133B0 /* String + ext.swift */; };
 		FE09734C297E5A2E003133B0 /* CityBackground.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE09734B297E5A2E003133B0 /* CityBackground.swift */; };
+		FE09734F297E5B79003133B0 /* EventDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE09734E297E5B79003133B0 /* EventDetailsView.swift */; };
 		FE4EB974297BE5BD0056F786 /* KudaGoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE4EB973297BE5BD0056F786 /* KudaGoApp.swift */; };
 		FE4EB978297BE5BE0056F786 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FE4EB977297BE5BE0056F786 /* Assets.xcassets */; };
 		FE4EB97B297BE5BE0056F786 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FE4EB97A297BE5BE0056F786 /* Preview Assets.xcassets */; };
 		FE4EB989297BEE900056F786 /* KudaGoEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE4EB988297BEE900056F786 /* KudaGoEndpoint.swift */; };
-		FE4EB98C297BF1F80056F786 /* Networking in Frameworks */ = {isa = PBXBuildFile; productRef = FE4EB98B297BF1F80056F786 /* Networking */; };
 		FE4EB991297BF66D0056F786 /* KudaGoService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE4EB990297BF66D0056F786 /* KudaGoService.swift */; };
 		FE4EB993297BF6B50056F786 /* CityModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE4EB992297BF6B50056F786 /* CityModel.swift */; };
 		FE4EB99B297C01C80056F786 /* CitySelectorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE4EB99A297C01C80056F786 /* CitySelectorView.swift */; };
@@ -34,6 +34,11 @@
 		FE4EB9B8297C49820056F786 /* EventsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE4EB9B7297C49820056F786 /* EventsViewModel.swift */; };
 		FE4EB9BB297D28540056F786 /* EventCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE4EB9BA297D28540056F786 /* EventCell.swift */; };
 		FE4EB9BF297E21250056F786 /* LoadingEventCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE4EB9BE297E21250056F786 /* LoadingEventCell.swift */; };
+		FE6EE0A1297E7B0E00480280 /* DateFormatterService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE6EE0A0297E7B0E00480280 /* DateFormatterService.swift */; };
+		FE6EE0A4297E7E9900480280 /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE6EE0A3297E7E9900480280 /* Endpoint.swift */; };
+		FE6EE0A6297E7EAA00480280 /* HTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE6EE0A5297E7EAA00480280 /* HTTPClient.swift */; };
+		FE6EE0A8297E7EBA00480280 /* HTTPRequestError.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE6EE0A7297E7EBA00480280 /* HTTPRequestError.swift */; };
+		FE6EE0AA297E7EC900480280 /* HTTPRequestMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE6EE0A9297E7EC900480280 /* HTTPRequestMethod.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,6 +46,7 @@
 		FE097347297E485F003133B0 /* FetchingEventsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchingEventsView.swift; sourceTree = "<group>"; };
 		FE097349297E50C8003133B0 /* String + ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String + ext.swift"; sourceTree = "<group>"; };
 		FE09734B297E5A2E003133B0 /* CityBackground.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityBackground.swift; sourceTree = "<group>"; };
+		FE09734E297E5B79003133B0 /* EventDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventDetailsView.swift; sourceTree = "<group>"; };
 		FE4EB970297BE5BD0056F786 /* KudaGo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KudaGo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FE4EB973297BE5BD0056F786 /* KudaGoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KudaGoApp.swift; sourceTree = "<group>"; };
 		FE4EB977297BE5BE0056F786 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -65,6 +71,11 @@
 		FE4EB9B7297C49820056F786 /* EventsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsViewModel.swift; sourceTree = "<group>"; };
 		FE4EB9BA297D28540056F786 /* EventCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventCell.swift; sourceTree = "<group>"; };
 		FE4EB9BE297E21250056F786 /* LoadingEventCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingEventCell.swift; sourceTree = "<group>"; };
+		FE6EE0A0297E7B0E00480280 /* DateFormatterService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateFormatterService.swift; sourceTree = "<group>"; };
+		FE6EE0A3297E7E9900480280 /* Endpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
+		FE6EE0A5297E7EAA00480280 /* HTTPClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPClient.swift; sourceTree = "<group>"; };
+		FE6EE0A7297E7EBA00480280 /* HTTPRequestError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPRequestError.swift; sourceTree = "<group>"; };
+		FE6EE0A9297E7EC900480280 /* HTTPRequestMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPRequestMethod.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,13 +83,20 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FE4EB98C297BF1F80056F786 /* Networking in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		FE09734D297E5B5F003133B0 /* EventDetails */ = {
+			isa = PBXGroup;
+			children = (
+				FE09734E297E5B79003133B0 /* EventDetailsView.swift */,
+			);
+			path = EventDetails;
+			sourceTree = "<group>";
+		};
 		FE4EB967297BE5BD0056F786 = {
 			isa = PBXGroup;
 			children = (
@@ -98,6 +116,7 @@
 		FE4EB972297BE5BD0056F786 /* KudaGo */ = {
 			isa = PBXGroup;
 			children = (
+				FE6EE0A2297E7E8E00480280 /* Networking */,
 				FE4EB9AF297C1FB20056F786 /* Resources */,
 				FE4EB994297BFDC40056F786 /* Info.plist */,
 				FE4EB977297BE5BE0056F786 /* Assets.xcassets */,
@@ -123,6 +142,7 @@
 			children = (
 				FE4EB986297BEB2B0056F786 /* KudaGo */,
 				FE097345297E4271003133B0 /* AsyncImageService.swift */,
+				FE6EE0A0297E7B0E00480280 /* DateFormatterService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -161,6 +181,7 @@
 			isa = PBXGroup;
 			children = (
 				FE4EB973297BE5BD0056F786 /* KudaGoApp.swift */,
+				FE09734D297E5B5F003133B0 /* EventDetails */,
 				FE4EB998297C01B20056F786 /* CitySelectorScreen */,
 				FE4EB99C297C05090056F786 /* EventsScreen */,
 			);
@@ -225,6 +246,17 @@
 			path = Subviews;
 			sourceTree = "<group>";
 		};
+		FE6EE0A2297E7E8E00480280 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				FE6EE0A3297E7E9900480280 /* Endpoint.swift */,
+				FE6EE0A5297E7EAA00480280 /* HTTPClient.swift */,
+				FE6EE0A7297E7EBA00480280 /* HTTPRequestError.swift */,
+				FE6EE0A9297E7EC900480280 /* HTTPRequestMethod.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -242,7 +274,6 @@
 			);
 			name = KudaGo;
 			packageProductDependencies = (
-				FE4EB98B297BF1F80056F786 /* Networking */,
 			);
 			productName = KudaGo;
 			productReference = FE4EB970297BE5BD0056F786 /* KudaGo.app */;
@@ -273,7 +304,6 @@
 			);
 			mainGroup = FE4EB967297BE5BD0056F786;
 			packageReferences = (
-				FE4EB98A297BF1F80056F786 /* XCRemoteSwiftPackageReference "NetworkingPackage" */,
 			);
 			productRefGroup = FE4EB971297BE5BD0056F786 /* Products */;
 			projectDirPath = "";
@@ -305,8 +335,10 @@
 			files = (
 				FE4EB989297BEE900056F786 /* KudaGoEndpoint.swift in Sources */,
 				FE09734A297E50C8003133B0 /* String + ext.swift in Sources */,
+				FE6EE0A6297E7EAA00480280 /* HTTPClient.swift in Sources */,
 				FE4EB9B8297C49820056F786 /* EventsViewModel.swift in Sources */,
 				FE4EB993297BF6B50056F786 /* CityModel.swift in Sources */,
+				FE6EE0A8297E7EBA00480280 /* HTTPRequestError.swift in Sources */,
 				FE4EB9AE297C1F990056F786 /* Font + ext.swift in Sources */,
 				FE4EB9A0297C07780056F786 /* EventsModel.swift in Sources */,
 				FE4EB9BB297D28540056F786 /* EventCell.swift in Sources */,
@@ -316,15 +348,19 @@
 				FE4EB9AA297C1DBB0056F786 /* VisualEffectView.swift in Sources */,
 				FE4EB991297BF66D0056F786 /* KudaGoService.swift in Sources */,
 				FE09734C297E5A2E003133B0 /* CityBackground.swift in Sources */,
+				FE09734F297E5B79003133B0 /* EventDetailsView.swift in Sources */,
 				FE4EB9A4297C17F40056F786 /* CitySelectorViewModel.swift in Sources */,
 				FE4EB9B4297C233B0056F786 /* SnapCarouselView.swift in Sources */,
 				FE4EB974297BE5BD0056F786 /* KudaGoApp.swift in Sources */,
 				FE4EB9A6297C1CE70056F786 /* CityCellView.swift in Sources */,
+				FE6EE0AA297E7EC900480280 /* HTTPRequestMethod.swift in Sources */,
 				FE097346297E4271003133B0 /* AsyncImageService.swift in Sources */,
+				FE6EE0A1297E7B0E00480280 /* DateFormatterService.swift in Sources */,
 				FE4EB9AC297C1E510056F786 /* Color + ext.swift in Sources */,
 				FE097348297E485F003133B0 /* FetchingEventsView.swift in Sources */,
 				FE4EB99B297C01C80056F786 /* CitySelectorView.swift in Sources */,
 				FE4EB99E297C05200056F786 /* EventsView.swift in Sources */,
+				FE6EE0A4297E7E9900480280 /* Endpoint.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -533,25 +569,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCRemoteSwiftPackageReference section */
-		FE4EB98A297BF1F80056F786 /* XCRemoteSwiftPackageReference "NetworkingPackage" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/Grafonsky/NetworkingPackage";
-			requirement = {
-				branch = main;
-				kind = branch;
-			};
-		};
-/* End XCRemoteSwiftPackageReference section */
-
-/* Begin XCSwiftPackageProductDependency section */
-		FE4EB98B297BF1F80056F786 /* Networking */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = FE4EB98A297BF1F80056F786 /* XCRemoteSwiftPackageReference "NetworkingPackage" */;
-			productName = Networking;
-		};
-/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = FE4EB968297BE5BD0056F786 /* Project object */;
 }

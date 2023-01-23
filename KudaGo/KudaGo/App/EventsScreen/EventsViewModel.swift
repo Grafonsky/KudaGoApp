@@ -13,7 +13,7 @@ final class EventsViewModel: ObservableObject {
     @Published var cityName: String
     @Published var events: [EventsResults] = []
     @Published var isPresented: Bool = false
-    @Published var isLoading: Bool = false
+    @Published var isLoading: Bool = true
     
     var currentPage: Int = 1
     
