@@ -14,6 +14,7 @@ final class EventsViewModel: ObservableObject {
     @Published var events: [EventsResults] = []
     @Published var isPresented: Bool = false
     @Published var isLoading: Bool = true
+    @Published var isLoadingFailed: Bool = false
     
     var currentPage: Int = 1
     
@@ -37,8 +38,14 @@ final class EventsViewModel: ObservableObject {
                     self?.isPresented = true
                 }
             case .failure(let error):
-                print("INSERT FAILURE ALERT")
-                print(error.localizedDescription)
+                DispatchQueue.main.async { [weak self] in
+                    self?.isLoadingFailed = true
+                    self?.isLoading = false
+                    self?.isPresented = true
+                    AlertService.shared.presentAlert(
+                        title: "error",
+                        message: error.localizedDescription)
+                }
             }
         }
     }

@@ -39,6 +39,8 @@
 		FE6EE0A6297E7EAA00480280 /* HTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE6EE0A5297E7EAA00480280 /* HTTPClient.swift */; };
 		FE6EE0A8297E7EBA00480280 /* HTTPRequestError.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE6EE0A7297E7EBA00480280 /* HTTPRequestError.swift */; };
 		FE6EE0AA297E7EC900480280 /* HTTPRequestMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE6EE0A9297E7EC900480280 /* HTTPRequestMethod.swift */; };
+		FE6EE0AC297E841B00480280 /* AlertService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE6EE0AB297E841B00480280 /* AlertService.swift */; };
+		FE6EE0AE297E843800480280 /* UIWindow + ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE6EE0AD297E843800480280 /* UIWindow + ext.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -76,6 +78,8 @@
 		FE6EE0A5297E7EAA00480280 /* HTTPClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPClient.swift; sourceTree = "<group>"; };
 		FE6EE0A7297E7EBA00480280 /* HTTPRequestError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPRequestError.swift; sourceTree = "<group>"; };
 		FE6EE0A9297E7EC900480280 /* HTTPRequestMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPRequestMethod.swift; sourceTree = "<group>"; };
+		FE6EE0AB297E841B00480280 /* AlertService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertService.swift; sourceTree = "<group>"; };
+		FE6EE0AD297E843800480280 /* UIWindow + ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIWindow + ext.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,10 +120,10 @@
 		FE4EB972297BE5BD0056F786 /* KudaGo */ = {
 			isa = PBXGroup;
 			children = (
-				FE6EE0A2297E7E8E00480280 /* Networking */,
-				FE4EB9AF297C1FB20056F786 /* Resources */,
 				FE4EB994297BFDC40056F786 /* Info.plist */,
 				FE4EB977297BE5BE0056F786 /* Assets.xcassets */,
+				FE6EE0A2297E7E8E00480280 /* Networking */,
+				FE4EB9AF297C1FB20056F786 /* Resources */,
 				FE4EB995297BFF4A0056F786 /* App */,
 				FE4EB98D297BF3BF0056F786 /* Extensions */,
 				FE4EB987297BEE240056F786 /* Model */,
@@ -143,6 +147,7 @@
 				FE4EB986297BEB2B0056F786 /* KudaGo */,
 				FE097345297E4271003133B0 /* AsyncImageService.swift */,
 				FE6EE0A0297E7B0E00480280 /* DateFormatterService.swift */,
+				FE6EE0AB297E841B00480280 /* AlertService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -173,6 +178,7 @@
 				FE4EB9AB297C1E510056F786 /* Color + ext.swift */,
 				FE4EB9AD297C1F990056F786 /* Font + ext.swift */,
 				FE097349297E50C8003133B0 /* String + ext.swift */,
+				FE6EE0AD297E843800480280 /* UIWindow + ext.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -350,6 +356,7 @@
 				FE09734C297E5A2E003133B0 /* CityBackground.swift in Sources */,
 				FE09734F297E5B79003133B0 /* EventDetailsView.swift in Sources */,
 				FE4EB9A4297C17F40056F786 /* CitySelectorViewModel.swift in Sources */,
+				FE6EE0AC297E841B00480280 /* AlertService.swift in Sources */,
 				FE4EB9B4297C233B0056F786 /* SnapCarouselView.swift in Sources */,
 				FE4EB974297BE5BD0056F786 /* KudaGoApp.swift in Sources */,
 				FE4EB9A6297C1CE70056F786 /* CityCellView.swift in Sources */,
@@ -357,6 +364,7 @@
 				FE097346297E4271003133B0 /* AsyncImageService.swift in Sources */,
 				FE6EE0A1297E7B0E00480280 /* DateFormatterService.swift in Sources */,
 				FE4EB9AC297C1E510056F786 /* Color + ext.swift in Sources */,
+				FE6EE0AE297E843800480280 /* UIWindow + ext.swift in Sources */,
 				FE097348297E485F003133B0 /* FetchingEventsView.swift in Sources */,
 				FE4EB99B297C01C80056F786 /* CitySelectorView.swift in Sources */,
 				FE4EB99E297C05200056F786 /* EventsView.swift in Sources */,

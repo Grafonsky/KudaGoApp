@@ -11,6 +11,7 @@ final class CitySelectorViewModel: ObservableObject {
     
     @Published var isCitiesLoaded: Bool = false
     @Published var cities: [CityModel] = []
+    @Published var isLoadingFailed: Bool = false
     
     private var kudaService: KudaGoService {
         return .shared
@@ -33,8 +34,12 @@ private extension CitySelectorViewModel {
                 }
                 
             case .failure(let error):
-                print("INSERT FAILURE ALERT")
-                print(error.localizedDescription)
+                DispatchQueue.main.async { [weak self] in
+                    self?.isLoadingFailed = true
+                    AlertService.shared.presentAlert(
+                        title: "error",
+                        message: error.localizedDescription)
+                }
             }
         }
     }
