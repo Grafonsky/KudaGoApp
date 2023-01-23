@@ -17,7 +17,6 @@ struct CityCellView: View {
         ZStack {
             VisualEffectView(effect: UIBlurEffect(style: .light))
                 .cornerRadius(20)
-            
             VStack {
                 Image(slug)
                     .resizable()
@@ -32,7 +31,9 @@ struct CityCellView: View {
                 isCitySelected = true
             }
             .fullScreenCover(isPresented: $isCitySelected) {
-                EventsView(slug: slug)
+                EventsView(viewModel: .init(
+                    slug: slug,
+                    cityName: name))
             }
         }
         .frame(

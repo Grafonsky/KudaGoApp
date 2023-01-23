@@ -9,7 +9,7 @@ import Foundation
 import Networking
 
 enum KudaGoEndpoint {
-    case cities, events(city: CityModel, page: Int)
+    case cities, events(city: String, page: Int)
 }
 
 extension KudaGoEndpoint: Networking.Endpoint {
@@ -41,7 +41,7 @@ extension KudaGoEndpoint: Networking.Endpoint {
             let orderByItem: URLQueryItem = .init(name: "order_by", value: "")
             let textFormat: URLQueryItem = .init(name: "text_format", value: "text")
             let idsItem: URLQueryItem = .init(name: "ids", value: "")
-            let locationItem: URLQueryItem = .init(name: "location", value: city.slug)
+            let locationItem: URLQueryItem = .init(name: "location", value: city)
             let actualSinceItem: URLQueryItem = .init(name: "actual_since", value: String(Date.currentTimeStamp))
             let actualUntilItem: URLQueryItem = .init(name: "actual_until", value: "")
             let isFreeItem: URLQueryItem = .init(name: "is_free", value: "")

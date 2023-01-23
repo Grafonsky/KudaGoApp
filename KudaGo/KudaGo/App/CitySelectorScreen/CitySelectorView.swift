@@ -18,6 +18,11 @@ struct CitySelectorView: View {
             
             if $viewModel.isCitiesLoaded.wrappedValue {
                 VStack {
+                    Image("KudaGoLogo")
+                        .resizable()
+                        .frame(width: 100, height: 100)
+                        .padding(.top, 25)
+                    
                     Spacer()
                     Text("chooseCity")
                         .foregroundColor(.white)
@@ -30,7 +35,7 @@ struct CitySelectorView: View {
                 SnapCarouselView(cities: $viewModel.cities.wrappedValue)
             } else {
                 ProgressView()
-                    .foregroundColor(.white)
+                    .progressViewStyle(CircularProgressViewStyle(tint: Color.white))
             }
         }
     }

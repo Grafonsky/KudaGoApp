@@ -8,3 +8,5 @@
 
 // MARK: - v1.0
 "chooseCity" = "Select the location of the event and tap on the icon";
+"gettingEvents" = "Getting the events...";
+"eventsIn" = "Events in %@";

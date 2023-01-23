@@ -10,22 +10,24 @@ import Combine
 
 // MARK: - ForEach Items Store
 
-struct Item: Identifiable {
+struct CityItem: Identifiable {
     var id: Int
     var city: CityModel
 }
 
-class Store: ObservableObject {
+class CityStore: ObservableObject {
+    
+    @Published var items: [CityItem]
+    
     var bag: Set<AnyCancellable> = .init()
     var cities: [CityModel] = []
-    @Published var items: [Item]
     
     init(cities: [CityModel]) {
         items = []
         self.cities = cities
         for i in cities.indices {
-            let new = Item(id: i,
-                           city: cities[i])
+            let new = CityItem(id: i,
+                               city: cities[i])
             items.append(new)
         }
     }
@@ -38,7 +40,7 @@ struct SnapCarouselView: View {
     @State private var snappedItem = 0.0
     @State private var draggingItem = 0.0
     
-    var store: Store
+    var store: CityStore
     
     init(cities: [CityModel]) {
         self.store = .init(cities: cities)
@@ -54,7 +56,6 @@ struct SnapCarouselView: View {
                 .offset(x: myXOffset(item.id) * 1.45, y: 0)
                 .zIndex(1.0 - abs(distance(item.id)) * 0.1)
                 .animation(.spring())
-                
             }
             .gesture(
                 DragGesture()
