@@ -58,11 +58,11 @@ class AsyncImageService: ObservableObject {
             return
         }
         
-        DispatchQueue.main.async {
+        DispatchQueue.main.async { [weak self] in
             guard let loadedImage = UIImage(data: data)
             else { return }
-            self.image = loadedImage
-            self.isLoaded = true
+            self?.image = loadedImage
+            self?.isLoaded = true
         }
     }
 }

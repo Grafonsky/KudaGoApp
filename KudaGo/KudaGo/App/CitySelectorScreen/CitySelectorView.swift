@@ -34,8 +34,15 @@ struct CitySelectorView: View {
                 
                 SnapCarouselView(cities: $viewModel.cities.wrappedValue)
             } else {
-                ProgressView()
-                    .progressViewStyle(CircularProgressViewStyle(tint: Color.white))
+                if $viewModel.isLoadingFailed.wrappedValue {
+                    Text("connectToTheInternet")
+                        .font(.customFont(weight: .light, size: 28))
+                        .foregroundColor(.white)
+                        .multilineTextAlignment(.center)
+                } else {
+                    ProgressView()
+                        .progressViewStyle(CircularProgressViewStyle(tint: Color.white))
+                }
             }
         }
     }
