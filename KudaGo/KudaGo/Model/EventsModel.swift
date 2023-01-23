@@ -13,15 +13,15 @@ struct EventsModel: Decodable {
 
 struct EventsResults: Decodable {
     let id: UUID = .init()
-    let date: [EventDate]?
-    var title: String?
+    let dates: [EventDate]?
+    let title: String?
     let description: String?
     let bodyText: String?
     let images: [EventImages]?
     let tags: [String]?
     
     enum CodingKeys: String, CodingKey {
-        case date, title, description, images, tags
+        case dates, title, description, images, tags
         case bodyText = "body_text"
     }
 }

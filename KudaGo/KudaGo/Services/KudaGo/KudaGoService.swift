@@ -6,9 +6,8 @@
 //
 
 import Foundation
-import Networking
 
-final class KudaGoService: Networking.HTTPClient {
+final class KudaGoService: HTTPClient {
     
     static let shared = KudaGoService()
     

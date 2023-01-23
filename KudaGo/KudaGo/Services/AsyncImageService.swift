@@ -12,10 +12,17 @@ class AsyncImageService: ObservableObject {
     @Published var image: UIImage?
     @Published var isLoaded = false
     
+    let cachesURL: URL
+    let diskCacheURL: URL
+    let cache: URLCache
+    
     var urlString: String?
     
     init(urlString: String?) {
         self.urlString = urlString
+        cachesURL = FileManager.default.urls(for: .cachesDirectory, in: .userDomainMask)[0]
+        diskCacheURL = cachesURL.appendingPathComponent("DownloadCache")
+        cache = URLCache(memoryCapacity: 10_000_000, diskCapacity: 1_000_000_000, directory: diskCacheURL)
         loadImage()
     }
     
@@ -28,12 +35,16 @@ class AsyncImageService: ObservableObject {
               let url = URL(string: urlString)
         else { return }
         
-        let task = URLSession.shared.dataTask(
-            with: url,
+        let config = URLSessionConfiguration.default
+        config.urlCache = cache
+        
+        let session = URLSession(configuration: config)
+        let req = URLRequest(url: url, cachePolicy: .returnCacheDataElseLoad)
+        session.dataTask(
+            with: req,
             completionHandler: getImageFromResponse(data:response:error:))
-        task.resume()
+        .resume()
     }
-    
     
     func getImageFromResponse(data: Data?, response: URLResponse?, error: Error?) {
         guard error == nil
